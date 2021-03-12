@@ -1,5 +1,6 @@
 package com.example.demo.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -10,6 +11,7 @@ import java.util.List;
 
 @Data
 @Entity
+@AllArgsConstructor
 public class Place {
     @Id
     @GeneratedValue
