@@ -10,7 +10,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  searchHeroes(id: number): Observable<Place> {
+  getPlace(id: number): Observable<Place> {
     return this.http.get<Place>('/place/' + id);
   }
 }

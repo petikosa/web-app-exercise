@@ -1,0 +1,31 @@
+.subheader {
+  color: grey;
+  font-size: medium;
+}
+
+.container {
+  border: 1px grey solid;
+  margin: 1rem;
+  padding: 0.1rem 1rem;
+  width: 35rem;
+  display: flex;
+}
+
+.hours {
+  border: 1px grey solid;
+  margin: 1rem;
+  padding: 0.1rem 1rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+.hours-container {
+  display: flex;
+}
+
+.times {
+  margin-left: 0.5rem;
+}

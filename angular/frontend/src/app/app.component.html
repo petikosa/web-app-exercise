@@ -1,0 +1,25 @@
+<div class="container">
+  <div>
+    <h2 class="header">{{ place?.name }}</h2>
+    <h3 class="subheader">{{ place?.address }}</h3>
+  </div>
+  <div class="hours">
+    <div><h3 class="subheader">Opening Hours</h3></div>
+    <div class="hours-container">
+      <div class="days">
+        <div>Monday</div>
+        <div>Tuesday - Friday</div>
+        <div>Saturday</div>
+        <div>Sunday</div>
+      </div>
+      <div class="times">
+        <div>{{place?.days[1]?.openingHours[0].start}} - {{place?.days[1]?.openingHours[1].end}}</div>
+        <div>{{place?.days[0]?.openingHours[0].start}} - {{place?.days[0]?.openingHours[0].end}} &nbsp;&nbsp; 
+          {{place?.days[1]?.openingHours[0].start}} - {{place?.days[1]?.openingHours[1].end}}
+        </div>
+        <div>{{place?.days[5]?.openingHours[0].note}}</div>
+        <div>{{place?.days[6]?.openingHours[0].note}}</div>
+      </div>
+    </div>
+  </div>
+</div>
