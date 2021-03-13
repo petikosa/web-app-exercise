@@ -13,9 +13,9 @@
         <div>Sunday</div>
       </div>
       <div class="times">
-        <div>{{place?.days[1]?.openingHours[0].start}} - {{place?.days[1]?.openingHours[1].end}}</div>
-        <div>{{place?.days[0]?.openingHours[0].start}} - {{place?.days[0]?.openingHours[0].end}} &nbsp;&nbsp; 
-          {{place?.days[1]?.openingHours[0].start}} - {{place?.days[1]?.openingHours[1].end}}
+        <div>{{formatTime(place?.days[0]?.openingHours[0].start)}} - {{formatTime(place?.days[0]?.openingHours[0].end)}}</div>
+        <div>{{formatTime(place?.days[0]?.openingHours[0].start)}} - {{formatTime(place?.days[0]?.openingHours[0].end)}} &nbsp;&nbsp; 
+          {{formatTime(place?.days[0]?.openingHours[1].start)}} - {{formatTime(place?.days[0]?.openingHours[1].end)}}
         </div>
         <div>{{place?.days[5]?.openingHours[0].note}}</div>
         <div>{{place?.days[6]?.openingHours[0].note}}</div>
